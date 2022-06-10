@@ -1,0 +1,29 @@
+<div class="owl-carousel owl-1">
+    <div class="container">
+        <div class="carousel slide text-center" id="main-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#main-carousel" data-slide-to="1"></li>
+                <li data-target="#main-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" [src]="url" [alt]="url">
+                </div>
+            </div>
+
+            <app-button href="#main-carousel" (onClick)="back()" color="carousel-control-prev" message="Prev"
+                data-slide="prev">
+                <span icon="carousel-control-prev-icon"></span>
+                <span class="sr-only" aria-hidden="true">Prev</span>
+            </app-button>
+
+            <app-button href="#main-carousel" (onClick)="next()" color="carousel-control-next" message="Next"
+                data-slide="next">
+                <span icon="carousel-control-next-icon"></span>
+                <span class="sr-only" aria-hidden="true">Next</span>
+            </app-button>
+        </div>
+    </div>
+</div>

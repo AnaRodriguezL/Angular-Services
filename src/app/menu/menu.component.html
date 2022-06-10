@@ -1,0 +1,30 @@
+<div class="content">
+    <div class="container">
+
+        <!-- TAB MENU -->
+        <div class="d-flex carousel-nav">
+            <div *ngFor="let categoria of category let i=index">
+                <a (click)="click(i)" class="col active">{{categoria.name}}</a>
+            </div>
+        </div>
+
+        <!-- CONTENT TAB -->
+        <div class="owl-carousel owl-1">
+            <div class="media-29101">
+                <div class="img">
+                    <app-carousel [images]="category[index].images"></app-carousel>
+                </div>
+            </div>
+            <div class="media-29101">
+                <div class="img">
+                    <app-carousel [images]="category[index].images"></app-carousel>
+                </div>
+            </div>
+            <div class="media-29101">
+                <div class="img">
+                    <app-carousel [images]="category[index].images"></app-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
